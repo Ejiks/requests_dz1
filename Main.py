@@ -1,8 +1,6 @@
 import requests
 
-TOKEN = "2619421814940190"
-
-def hero_requests(hero_list):
+def hero_requests(hero_list, TOKEN = "2619421814940190"):
     intel_dic = {}
     for name in hero_list:
         url = f"https://superheroapi.com/api/{TOKEN}/search/{name}"
